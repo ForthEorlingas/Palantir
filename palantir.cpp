@@ -1,4 +1,4 @@
-#include "DDaria.h"
+#include "palantir.h"
 
 bool onlyOne()
 {
