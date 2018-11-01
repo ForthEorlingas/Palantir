@@ -7,7 +7,7 @@ void main()
 
 	if (!onlyOne())
 	{
-		//hide();
+		hide();
 		turnOn();
 	}
 }
