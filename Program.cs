@@ -14,8 +14,8 @@ namespace Mail
                 //podajemy dane dostępowe
                 var credential = new NetworkCredential
                 {
-                    UserName = "krowadaria5",
-                    Password = "zaq1@WSX"
+                    UserName = "user",
+                    Password = "password"
                 };
                 client.Credentials = credential;
 
@@ -29,9 +29,9 @@ namespace Mail
                 var message = new MailMessage();
 
                 //dodajemy odbiorców
-                message.To.Add(new MailAddress("oblivion114@wp.pl"));
+                message.To.Add(new MailAddress("email_1@wp.pl"));
                 //podajemy adres nadawcy
-                message.From = new MailAddress("krowadaria5@gmail.com");
+                message.From = new MailAddress("email_2@gmail.com");
                 //Tytuł wiadomości
                 message.Subject = "Raport";
                 message.Body = "We have sent logs into yor email!";
